@@ -1,0 +1,28 @@
+﻿@page
+@model oopLan.Pages.CreateApplicationModel
+@{
+	ViewData["Title"] = "Create Application";
+}
+<div>
+	<form class="create-application">
+		<label>Название</label>
+		<p><input class="input-text" type="text" maxlength="48" name="Название"/></p>
+		<label>Тип активности</label>
+		<p><input class="input-text" list="activityList" type="text" name="model" /></p>
+		<label>Описание</label>
+		<p><textarea class="input-description"></textarea></p>
+		<p>
+			<button class="input-button" type="submit">Создать</button>
+		</p>
+		
+		
+	</form>
+	<datalist id="activityList">
+		<option value="Программирование" />
+		<option value="Экономика" />
+		<option value="Математика" />
+		<option value="Музыка" />
+		<option value="Образ жизни" />
+		<option value="Мода" />
+	</datalist>
+</div>

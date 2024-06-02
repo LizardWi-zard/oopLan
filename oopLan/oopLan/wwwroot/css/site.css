@@ -1,0 +1,113 @@
+:root {
+    --main-bg-color: rgb(228 240 245);
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.container {
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width:100%;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: var(--main-bg-color);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+    td:last-of-type {
+        text-align: center;
+    }
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.search-block {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.search-field {
+    
+    width: 90%;
+    padding-left: 8px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border-width: 1px;
+    float:left;
+}
+
+.input-button {
+    font-size: 1.1em;
+    border-radius: 8px;
+    border-width: 1px;
+    
+}
+
+.input-button:hover {
+    background-color: var(--main-bg-color);
+}
+.search-button {
+    float: right;
+}
+
+    
+
+.input-text {
+    width: 400px;
+}
+
+.input-description {
+    resize: none;
+    width: 400px;
+    height: 200px;
+}

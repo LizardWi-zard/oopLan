@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div>
+	<form class="search-block">
+		<input type="search" class="search-field"/>
+		<button class="input-button search-button">Поиск</button>
+	</form>
+	<table>
+		<caption>
+			Конференции
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col">Название</th>
+				<th scope="col">Тип активности</th>
+				<th scope="col">Описание</th>
+				<th scope="col">Дата</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Мастер-класс по C#</th>
+				<td>Программирование</td>
+				<td>Изучение основых особенностей языка программирования</td>
+				<td>02.06.2024</td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
