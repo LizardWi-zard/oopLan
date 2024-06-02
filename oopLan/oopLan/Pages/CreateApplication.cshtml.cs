@@ -7,6 +7,7 @@ namespace oopLan.Pages
     {
         public void OnGet()
         {
+
         }
     }
 }

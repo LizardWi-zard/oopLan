@@ -20,10 +20,10 @@
 				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 					<ul class="navbar-nav flex-grow-1">
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-page="/Index">Заявки</a>
+							<a class="nav-link text-dark @((string?)ViewData["Title"]=="Applications" ? "active": "")" asp-area="" asp-page="/Index">Заявки</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-page="/CreateApplication">Создать заявку</a>
+							<a class="nav-link text-dark @((string?)ViewData["Title"]=="Create Application" ? "active": "")" asp-area="" asp-page="/CreateApplication">Создать заявку</a>
 						</li>
 					</ul>
 				</div>

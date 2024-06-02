@@ -12,9 +12,15 @@ html {
     font-size: 14px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1499px) {
     html {
         font-size: 18px;
+    }
+}
+
+@media (min-width: 1500px) {
+    html {
+        font-size: 20px;
     }
 }
 
@@ -144,7 +150,9 @@ body {
     margin: auto;
 }
 
-
+.active {
+    text-decoration: underline;
+}
 
 table {
     border-collapse: collapse;
@@ -202,18 +210,18 @@ tfoot td {
     border-radius: 4px;
     border-width: 0px;
     float: left;
-    
 }
 
 .search-label {
-    margin-left:5px;
+    margin-left: 5px;
+    color: white;
 }
 
 .input-button {
     font-size: 1.1em;
     border-radius: 8px;
     border-width: 1px;
-    background-color:white;
+    background-color: white;
 }
 
     .input-button:hover {
@@ -225,8 +233,8 @@ tfoot td {
 }
 
 .date-field {
-    width:15%;
-    margin-left:5px;
+    width: 15%;
+    margin-left: 5px;
 }
 
 
@@ -236,7 +244,7 @@ tfoot td {
     width: 400px;
     border-radius: 4px;
     padding-left: 4px;
-    border-width:1px;
+    border-width: 1px;
 }
 
 
@@ -248,7 +256,7 @@ tfoot td {
     border-radius: 4px;
 }
 
-    
+
 
 .create-application-block {
     display: flex;
@@ -264,4 +272,3 @@ tfoot td {
     background-color: white;
     border-radius: 16px;
 }
-
